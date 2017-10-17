@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Bilder einbinden</title>
+		<link rel="stylesheet" type="text/css" href="bilder.css">
+	</head>
+
+	<body>
+
+    <!--
+    - Bilder einbinden mit <img>-Element
+    - zwei Attribute src="" (Quelle) und alt="" (Alternativtext)
+    - <img>-Element ist selbstschließend Element
+    - wichtig: Bilder und Grafiken sind Ladezeiten-Monster!!!
+    - maximal 200KB für große Bilder (gute Bildformate sind JPG, PNG, GIF und SVG)
+    - über das Thema Dateiformate kann man aber eine Lektion machen (wenn ihr wollt)
+    -->
+
+    <img src="starwars.png" alt="Ein Bild vom Droiden BB-8 der ein Buch anschaut" id="img1">
+
+    <br>
+
+    <!-- Es gibt verschiedene Arten Bildgröße anzugeben (wie bei allen Block-Elementen
+    [<img>-Element ist von Natur aus ein Inline-Block-Element]) -->
+
+    <img src="starwars.png" alt="Ein Bild vom Droiden BB-8 der ein Buch anschaut" id="img2">
+
+    <br>
+
+    <img src="starwars.png" alt="Ein Bild vom Droiden BB-8 der ein Buch anschaut" id="img3">
+
+    <br>
+
+    <!--
+    - Bilder lassen sich auch über externe Links einbinden (Beispiel)
+    -  Probleme:
+      1. man kann sich nicht darauf verlassen, dass das Bild immer dort sein wird
+      2. man hat sehr wahrscheinlich nicht die Rechte am Bild
+      3. Ladezeiten verlängern sich
+      -> man sollte immer versuchen Bilder lokal einzubinden!
+    -->
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiR1LOm7tIyd3pOEsiisZ3Gx9wxwnmhqtWJk5MG6sXFSYN1K8XYQ" alt="Ein Bild vom Droiden BB-8 der ein Buch anschaut" id="img4">
+
+	</body>
+
+</html>

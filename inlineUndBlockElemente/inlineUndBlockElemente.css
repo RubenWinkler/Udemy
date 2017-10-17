@@ -1,0 +1,26 @@
+span {
+  background-color: #F00;
+}
+
+u {
+  background-color: #0F0;
+}
+
+strong {
+  background-color: #00F;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background-color: #F00;
+  margin: 20px;
+}
+
+p {
+  background-color: #0F0;
+}
+
+h1 {
+  background-color: #00F;
+}

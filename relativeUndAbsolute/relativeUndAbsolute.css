@@ -1,0 +1,52 @@
+/*
+  - mit position: relative wird Element "an seiner eigenen Position" ausgreichtet
+  - Element behält dadurch seine Position aber kann auch ausgerichtet
+  werden, ausgehend von dieser Position (durch top, right, bottom, left)
+  - es wird nicht aus dem Textfluss/Elementfluss entnommen (Lücke bleibt deshalb erhalten)
+*/
+b {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+/* mit position:relative lassen sich außerdem Elemente in diesem Element durch
+position:absolute positionieren*/
+p {
+  position: relative;
+}
+
+span {
+  /* erst nur absolute einstellen und anschauen */
+  position: absolute;
+  /* dann verrücken */
+  top: 10px;
+  left: 8px;
+}
+
+/*
+- mit position:absolute wird Element aus dem Textfluss/Elementfluss
+gelöst (Lücke bleibt nicht erhalten) und kann dann absolut in einem realtiv positionierten
+Vorfahrenelement verrückt werden
+- gibt es kein soclhes positioniertes Vorfahrenelement, ist der Bezugspunkt das
+Wurzelelement des HTML-Dokuments, also das html-Element
+*/
+
+#relativesDIV {
+  width: 400px;
+  height: 400px;
+  background-color: grey;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+#absolutesDIV {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+/* Aufgabe: Zwei DIVs ineinander (Außen 300px, Innen 100px) und das Innere mit
+"position" mittig im Äußeren platzieren */

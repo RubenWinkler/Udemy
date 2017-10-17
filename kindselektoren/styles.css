@@ -1,0 +1,22 @@
+p > span {
+  color: red;
+}
+
+/* Geht nicht, weil kein direktes Kind! */
+
+p > b {
+  color: blue;
+}
+
+/* So lässt sich auch anderes b ansteuern*/
+
+span > b {
+  color: blue;
+}
+
+/* Kindselektoren lassen sich beliebig erweitern! Ist praktisch, weil man so nicht extra
+Klasse oder ID vergeben muss. Aber vorsicht, Pfade müssen einzigartig sein! */
+
+html > body > p > span > i {
+  color: green;
+}

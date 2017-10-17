@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="groessenangaben.css">
+	</head>
+
+	<body>
+
+    <!--
+      - Längenangaben (Höhe, Breite etc.) in % (mitskalieren) oder px (absolut)
+      - Prozent bezieht sich immer auf die Größe des Elternelements. So skalieren Elemente mit
+      Größenangaben in % mit.
+      - Längenangaben für padding, margin und border fast immer in px!
+    -->
+
+    <div>Dies ist ein DIV!</div>
+
+    <!--
+      - Schriftgrößen werden meist mit em, rem oder px angegeben
+      - em ist eine vom Browser berechnete Schriftgröße
+      - em hat als Maßeinheit die Breite und Höhe eines großen "M"
+      - wichtig: "M" welches als Maßeinheit dient ist das "M" in der Schriftgröße
+      des Elternelements, ist diese schon größer vergrößert em im Verhältnis dazu!
+    -->
+
+    Text!<br><br>
+    <span>Text!</span><br><br>
+    <span>Text!<span>Text!<span>Text!<span>Text!</span></span></span></span>
+
+    <!--
+      - rem (root-em -> em des Wurzelelements) bezieht sich auf die Größe eines "M" in der
+      Schriftgröße des Wurzelelements (<html>)
+      - dadurch werden Texte nicht zunehmend größer bei Verschachtelungen
+    -->
+
+    <br><br><br><br>
+
+    Text!<br><br>
+    <i>Text!</i><br><br>
+    <i>Text!<i>Text!<i>Text!<i>Text!</i></i></i></i>
+
+    <!--
+      - px ist eine absolute Größenangabe (gibt also kein Verhältnis an)
+    -->
+
+    <br><br><br><br>
+
+    Text!<br><br>
+    <u>Text!</u><br><br>
+    <u>Text!<u>Text!<u>Text!<u>Text!</u></u></u></u>
+
+    <!--
+      - es gibt noch viele weitere Maßeinheiten in CSS (Suche: Maßeinheiten CSS)
+    -->
+
+	</body>
+
+</html>

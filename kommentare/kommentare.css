@@ -1,0 +1,20 @@
+/* Diese CSS-Datei beinhaltet Regeln für folgende Elemente:
+    - <h1>
+    - <p>
+ */
+
+/* CSS-Regeln für Überschriften erster Ordnung */
+h1 {
+  color: red;
+}
+
+/* CSS-Regeln für alle <p>-Elemente */
+p {
+  background-color: grey;
+}
+
+/* Auch CSS-Kommentare lassen sich nicht verschachteln
+
+  /* Auch CSS-Kommentare lassen sich nicht verschachteln */
+
+*/

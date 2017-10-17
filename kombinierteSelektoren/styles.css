@@ -1,0 +1,15 @@
+b ~ span > b {
+  color: red;
+}
+
+p span.warnung {
+  color: blue;
+}
+
+.warnung ~ b {
+  color: orange;
+}
+
+ p > b ~ u#wichtig {
+   font-weight: bold;
+ }

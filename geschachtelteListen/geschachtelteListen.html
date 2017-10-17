@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Geschachtelte Listen</title>
+		<link rel="stylesheet" type="text/css" href="">
+	</head>
+
+	<body>
+
+    <!-- unordered list (ungeordnete Liste) -->
+    <ul>
+      <!-- Zur Wiederholung -->
+      <li>Punkt</li>
+      <!-- Schachtelung immer in <li>-Elementen -->
+      <li>Punkt
+        <ul>
+          <li>Unterpunkt</li>
+          <li>Unterpunkt</li>
+          <li>Unterpunkt</li>
+        </ul>
+      </li>
+      <li>Punkt</li>
+      <li>Punkt</li>
+      <li>Punkt</li>
+    </ul>
+
+    <!-- ordered list (geordnete Liste) -->
+    <ol>
+      <!-- Zur Wiederholung -->
+      <li>Punkt</li>
+      <!-- Schachtelung immer in <li>-Elementen -->
+      <li>Punkt
+        <ol>
+          <li>Unterpunkt</li>
+          <li>Unterpunkt</li>
+          <li>Unterpunkt</li>
+        </ol>
+      </li>
+      <li>Punkt</li>
+      <li>Punkt</li>
+      <li>Punkt</li>
+    </ol>
+
+    <dl>
+      <!-- Zur Wiederholung -->
+      <dt>Begriff</dt>
+      <dd>Erklärung des Begriffs</dd>
+      <!-- Schachtelung immer in <dd>-Elementen -->
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language
+        <dl>
+          <dt>Hypertext</dt>
+          <dd>dt.: Übertext</dd>
+          <dt>Markup</dt>
+          <dd>dt.: Auszeichnung</dd>
+          <dt>Language</dt>
+          <dd>dt.: Sprache</dd>
+        </dl>
+      </dd>
+      <dt>CSS</dt>
+      <dd>Cascading Stylesheets</dd>
+    </dl>
+
+	</body>
+
+</html>

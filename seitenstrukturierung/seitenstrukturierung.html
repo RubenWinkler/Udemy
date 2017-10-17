@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Seitenstrukturierung in HTML5</title>
+		<link rel="stylesheet" type="text/css" href="seitenstrukturierung.css">
+	</head>
+
+	<body>
+
+  <!--
+  - bisher kennen wir nur <div> zur Gruppierung von Elementen (in HTML4 war das auch der Stadard)
+  - Problem: <div> ist zwar praktisch, aber hat keine logische Bedeutung (keine Aussagekraft).
+  Es gruppiert nur andere Elemente.
+  - in HTML5 sind hierfür zahlreiche neue "div-ähnliche"-Elemente eingeführt worden, die jedoch auch
+  eine logische Bedeutung haben (schaffen mehrwert/mehrinformation)
+  - so lassen sich HTML-Dokumente nun auch logisch gliedern und strukturieren
+  - für Suchmaschinen und Blinde ist es von Vorteil, wenn alle HTML-Elemente auch eine Bedeutung haben
+  - Suchmaschinen untersuchen Seitenstruktur anhand dieser Elemente und erzeugen daraus ein Outline
+  (Grundstruktur) des Dokuments
+  - blinde Menschen können sich mit ihren Screenreadern durch die neuen Elemente besser auf der
+  Seite orientieren und einfacher über die Seite navigieren
+  -->
+
+  <main></main>
+  <!--
+  - Sollte die Hauptinhalte des HTML-Dokuments einschließen
+  - Hauptinhalte sollten auf der gesamten Website einzigartig sein
+  (also z.B. nicht eine Navigationsleiste die auf jeder Seite vorkommt)
+  - es darf nur ein <main>-Element pro Seite geben
+  -->
+
+  <section></section>
+  <!--
+  - schließt eine Gruppe von Elementen ein, wobei die gesamte Gruppe an Elementen nicht unbedingt
+  für sich alleine Sinn ergeben muss
+  - <section> dient mehr dazu logische Abschnitte oder Bereiche auf der Website zu bilden
+  - es ist ratsam, dass jede Section eine eigene Überschrift bekommt
+  -->
+
+  <article></article>
+  <!--
+  - schließt genau wie <section> eine Gruppe von Elementen ein, aber die Gruppe muss auch für sich
+  alleine Sinn ergeben (z.B. journalistische Artikel oder Blog-Posts)
+  -->
+
+  <nav></nav>
+  <!--
+  - <nav> schließt Navigationselemente (z.B. Link oder Querverweise ein)
+  - häufigste Verwendung ist für die Navigationsleiste einer Website
+  -->
+
+  <aside></aside>
+  <!--
+  - <aside> schließt
+  -->
+
+  <header></header>
+  <!--
+  - meist Kopfbereich einer Seite (nicht zu verwechseln mit dem <head>)
+  - enthält meist die Navigationsleiste, eine Headerbild, das Logo und den Titel der Website
+  - kann aber auch in <article> (oder selten auch <section>) verwendet werden, um diesem
+  einen Kopf zu geben (z.B. mit Titelbild und Titel des <articles>)
+  -->
+
+  <footer></footer>
+  <!--
+  - meist die Fußzeile einer Webseite
+  - enthät meist Kontaktangaben, Impressum, Copyright und evtl. eine Sitemap
+  - Position ist meist unterhalb des Inhalts der Seite (am Ende der Seite)
+  - kann ebenfalls in <article> (oder selten auch <section>) verwendet werden, um diesem eine Fußzeile
+  mit z.B. Informationen zu Autor oder Copyright-Informationen zu geben
+  -->
+
+  <div></div>
+  <!--
+  - wenn es nur um die reine Gruppierung von Elementen geht und keine der anderen Elemente passend
+  erscheinen, kann <div> verwendet werden
+  -->
+
+  <!-- Im Praxisteil werden wir dann genau sehen, wie man diese Elemente benutzt! -->
+
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Die display-Eigenschaft</title>
+		<link rel="stylesheet" type="text/css" href="displayEigenschaft.css">
+	</head>
+
+	<body>
+
+    <!--
+    - man kann das Verhalten von Elementen mit der Display-Eigenschaft verändern
+    - drei Varianten: display: inline; display: block; und display: inline-block;
+    - mit  display: inline; sorgt man dafür, dass Block-Elemente als Inline-Elemente dargestellt werden
+    (hierdurch verliert Block-Element die Eigenschaften eines Block-Elements, also z.B. das man width und
+    height einstellen kann)
+    -->
+    <span class="test1">Spans als Blöcke darstellen </span><span class="test1">geht ganz einfach!</span>
+
+    <br>
+    <br>
+
+    <!--
+    - mit  display: block; sorgt man dafür, dass Inline-Elemente als Block-Elemente dargestellt werden
+    (damit bekommen Inline-Elemente Block-Eigenschaften z.B. width, height, padding, margin, border etc. einstellen)
+    -->
+    <div class="test2">TEXT</div>
+    <div class="test2">TEXT</div>
+
+    <br>
+    <br>
+
+    <!--
+    - mit  display: inline-block; sorgt man dafür, dass ein Element (egal ob Inline oder Block)
+    als Inline-Block-Element dargestellt wird
+    - Element wird dadurch Inline dargestellt aber hat Block-Eigenschaften (z.B. das man width und
+    height einstellen kann)
+    -->
+    <div class="test3"></div>
+    <div class="test3"></div>
+
+	</body>
+
+</html>

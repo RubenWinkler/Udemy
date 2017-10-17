@@ -1,0 +1,81 @@
+div {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.hintergrund {
+  height: 400px;
+  width: 400px;
+  padding: 50px;
+  background-color: grey;
+  box-sizing: border-box;
+}
+
+/* Vordefinierte Farben
+  - Farben durch Namen definiert (erleichert die Benutzung)
+  - kennen schon Farben wie red, blue, green, yellow, purple etc.
+  - gibt aber noch viele mehr: https://www.w3schools.com/cssref/css_colors.asp
+*/
+
+#div1 {
+  background-color: chocolate;
+}
+
+/* Hexadezimalfarben:
+  - häufigste Variante
+  - #RRGGBB
+  - Hexcodiert heißt, dass es immer 16 Werte für jede Stelle gibt und zwar die Werte von 0-15
+    (es wird aber anders gezähl 0-9 A B C D E F)
+  - #0000FF (blau), #00FF00 (grün), #FF0000 (rot)
+  - Groß- und Kleinschreibung spielt keine Rolle
+  - Verkürzte Schreibweise mit 3 Stellen, wenn Werte für RGB gleich sind (Bsp.: #55FF33 -> #5F3)
+  -> sieht man häufig bei weiß (#000) und schwarz (#FFF)
+*/
+
+#div2 {
+  background-color: #F0BC5B;
+}
+
+/* RGB-Farben
+  - man gibt Werte für Rot Grün Blau an
+  - Schreibweise: rgb(Rot, Grün, Blau)
+*/
+
+#div3 {
+  background-color: rgb(255, 144, 89);
+}
+
+/* RGBA-Farben
+  - man gibt Werte für Rot Grün Blau und Alpha an
+  - Schreibweise: rgb(Rot, Grün, Blau, Alpha)
+  - Alpha ist ein Wert für die Durchsichtigkeit (zwischen 0.0 komplett unsichtbar
+  und 1.0 komplett undurchsichtig)
+*/
+
+#div4 {
+  background-color: rgba(255, 144, 89, 0.2);
+}
+
+/* HSL-Farben
+  - man gibt Werte für Hue (Farbton), Saturation (Sättigung), Lightness (Helligkeit) an
+  - Hue (Farbton) ist Gradzahl auf Farbkreis (360 -> rot, 120 -> grün, 240 -> blau)
+  - Saturation (Sättigung) und Lightness (helligkeit) werden in % angegeben
+*/
+
+#div5 {
+  background-color: hsl(63, 72%, 60%);
+}
+
+/* HSL-Farben
+  - man gibt Werte für Hue (Farbton), Saturation (Sättigung), Lightness (Helligkeit) und
+  Alpha (Durchsichtigkeit) an
+  - Hue (Farbton) ist Gradzahl auf Farbkreis (360 -> rot, 120 -> grün, 240 -> blau)
+  - Saturation (Sättigung) und Lightness (helligkeit) werden in % angegeben
+  - Alpha ist ein Wert für die Durchsichtigkeit (zwischen 0.0 komplett unsichtbar
+  und 1.0 komplett undurchsichtig)
+*/
+
+#div6 {
+  background-color: hsla(63, 72%, 60%, 0.1);
+}

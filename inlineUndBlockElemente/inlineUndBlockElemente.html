@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Inline- und Block-Elemente</title>
+		<link rel="stylesheet" type="text/css" href="inlineUndBlockElemente.css">
+	</head>
+
+	<body>
+
+  <!--
+  - Unterscheidung zwischen Inline- ("in Zeile") und Block-Elementen ("Blöcke")
+  - Inline-Elemente haben wir am Anfang des Kurses ganz viele kennengelernt
+  (z.B. <span>, <u>, <strong> etc. gibt noch viele weitere)
+  - wichtige Eigenschaften von Inline-Elementen sind, dass nicht in einer neuen Zeile beginnen
+  und nur so viel von der Breite einnehmen wie sie brauchen
+  - außerdem kann man für Inline-Elemente nicht width und height definieren
+
+  Beispiel:
+  -->
+  <span>Die Span ist ein Inline-Element </span>
+  <u>also fängt die nächste Span nicht eine Zeile tiefer an, </u>
+  <strong>sondern die aktuelle Zeile wird einfach fortgesetzt.</strong>
+
+  <!--
+  - Block-Elemente haben wir auch schon einige kennengelernt (z.B. <p>, <div> und <h1>)
+  - Block-Elemente starten immer in einer neuen Zeile (werden also immer untereinander
+  gepackt und nicht nebeneinander wie Inline-Elemente)
+  - außerdem blockieren Block-Elemente immer die komplette zur Verfügung stehende Breite der Seite
+
+  Beispiel:
+  -->
+  <div></div>
+  <p>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+    sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+    t labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo d
+    olores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
+  </p>
+  <h1>Überschriften sind auch Block-Elemente</h1>
+
+	</body>
+
+</html>

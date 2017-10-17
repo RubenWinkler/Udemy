@@ -1,0 +1,44 @@
+/*
+- Element wird aus Textfluss entnommen starr am Viewport ausgerichtet
+(nicht an der Seite, sondern VIEWPORT!)
+ */
+
+#fixedDIV {
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  background-color: grey;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+  height: 10000px;
+}
+
+/* Besonders praktisch für Navigationsleisten oben oder Fußzeilen unten. */
+
+/*
+- Sticky ist eine Mischung aus relativ und fixed positioning.
+- Element wird als relative behandelt, bis einen definierten
+Punkt erreicht und ab dann als fixed behalndelt wird.
+*/
+
+#stickyDIV {
+  position: sticky;
+  top: 20px; /* Erstmal weglassen. */
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-top: 300px;
+}
+
+/*
+- static ist Default-Wert für position
+- Element bleibt im Textfluss
+- Top, Bottom, Right, Left Angaben werden ignoriert
+*/
+
+#staticText {
+  position: static;
+}

@@ -1,0 +1,7 @@
+p b {
+  color: blue;
+}
+
+html body p span b {
+  color: red;
+}

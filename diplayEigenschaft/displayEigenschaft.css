@@ -1,0 +1,13 @@
+.test1 {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+
+.test2 {
+  display: inline;
+}
+
+.test3 {
+  display: inline-block;
+}

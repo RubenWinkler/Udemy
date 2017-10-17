@@ -1,0 +1,9 @@
+#warnung {
+  color: orange;
+}
+
+/* Macht keinen Sinn, da man ID sowieso nur einmal benutzt! */
+
+p#warnung {
+  color: orange;
+}

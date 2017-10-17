@@ -1,0 +1,7 @@
+span ~ b {
+  color: red;
+}
+
+span ~ b ~ span {
+  color: blue;
+}

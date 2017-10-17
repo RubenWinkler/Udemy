@@ -1,0 +1,108 @@
+div {
+  height: 600px;
+  width: 600px;
+  border: 2px solid grey;
+  margin-bottom: 20px;
+}
+
+#div1 {
+  background-color: #A2B3C4;
+}
+
+#div2 {
+  background-image: url("hintergrund.png");
+}
+
+#div3 {
+  background-image: url("hintergrund.png");
+  background-repeat: repeat-x;
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+}
+
+#div4 {
+  background-image: url("hintergrund.png");
+  background-repeat: repeat-y;
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+}
+
+#div5 {
+  background-image: url("hintergrund.png");
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+}
+
+#div6 {
+  background-image: url("hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  /*
+  - erste Längenangabe bezeichnet dabei die Position in x-Richtung (horizontal),
+  die zweite die in y-Richtung (vertikal)
+  - auch negative Werte sind möglich
+  - horizontal: left, center, right (+ beliebige Maßeinheiten)
+  - vertikal: top center bottom (+ beliebige Maßeinheiten)
+  - wird nur eine Angabe gemacht ist es die horizontale Position, die andere bekommt center
+  - Ausgangswert ist 0 0
+  */
+}
+
+#div7 {
+  background-image: url("hintergrund.png");
+  background-attachment: fixed;
+  /*
+  - fixed sorgt dafür, dass Background nicht mitscrollt
+  */
+}
+
+/* OFFSETS seit CSS3*/
+
+#div8 {
+  background-image: url("hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: 100px 200px;
+  /*
+  - Ausgangspunkt ist standardmäßig links-oben
+  - es wird Abstand nach links und oben definiert (100px nach links und 200px nach oben)
+  - im Prinzip wie ein Margin, nur für das Hintergrundbild
+  - es sind auch %-Angaben möglich z.B. background-position: 20% 30%;
+  */
+}
+
+/*
+- Was ist aber wenn Abstand z.B. nach rechts-unten nötig ist?
+- Offset von rechts-unten
+*/
+
+#div9 {
+  background-image: url("hintergrund.png");
+  background-repeat: no-repeat;
+  background-position: right 100px bottom 200px;
+}
+
+
+/* KURZSCHREIBWEISE */
+
+#div10 {
+  /*
+  BISHER:
+
+  background-color:
+  background-image:
+  background-repeat:
+  background-attachment:
+  background-position:
+
+  JETZT:
+
+  background: color image repeat attachment position;
+  */
+  background: #0000FF url("hintergrund.png") repeat-y fixed left 30px top 30px;
+
+  /*
+  - es können einzelne Wert weggelassen werden, solange die anderen in richtiger
+  Reihenfolge bleiben
+  */
+}

@@ -1,0 +1,43 @@
+li {
+  background-color: grey;
+}
+
+ul.test1 {
+  list-style-type: square;
+}
+
+ul.test2 {
+  list-style-position: inside;
+}
+
+ul.test3 {
+  list-style-position: outside;
+}
+
+ul.test4 {
+  list-style-image: url(logo.png);
+}
+
+ol.test5 {
+  list-style-type: upper-roman;
+}
+
+ol.test6 {
+  list-style-position: inside;
+}
+
+ol.test7 {
+  list-style-position: outside;
+}
+
+ol.test8 {
+  list-style-image: url(logo.png);
+}
+
+ul.test9 {
+  list-style: square inside url(logo.png);
+}
+
+ul.test10 > li {
+  display: inline-block;
+}
