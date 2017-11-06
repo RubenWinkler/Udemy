@@ -1,9 +1,10 @@
 /*
+
   - Schriftarten -> font-family
   - Schriftarten werden vererbt
   - reicht also, wenn man font-family für body-Element festlegt
-  - man kann (und sollte!) mehrere Schriftarten festlegen. Erste wird genommen, wenn verfügbar
-  und sonst sind die anderen Fallback-Schriftarten.
+  - man kann (und sollte!) mehrere Schriftarten festlegen. Erste wird genommen,
+  wenn verfügbar und sonst sind die anderen Fallback-Schriftarten.
   - am Ende sollte man dann auch noch einen generellen Schrift-Familie angeben
   (serif, sans-serif, cursive, fantasy, monospace)
   -> diese Varianten kennt eigentlich jeder Browser
