@@ -9,52 +9,108 @@
 
 	<body>
 
+		<!--
+		- Unterscheidung zwischen absoulte Größenangaben und relativen Größenangaben
+		- erstes Video absolute Längenangabe, zweites/drittes Video realtive Größenangaben
+		-->
+
+		<!--
+		- absoulte Größenangaben kennen wir schon -> px
+		- gibt auch andere Maßeinheiten (z.B. Zentimeter, Millimeter, Zoll etc.)
+	 	aber die werden fast nie benutzt
+		- BEISPIEL:
+		-->
+
+		<div id="absolut">Eine absolute Größenangabe!</div>
+
+		<br><br><br>
+
+		<!--
+		width: 300px;
+		height: 300px;
+		font-size: 20px;
+		background-color: #F00;
+
+		- PROBLEM: Fehlende Skalierbarkeit zeigen
+		-->
+
+		<!--
+		- Problem der Skalierbarkeit von absoluten Größenangaben
+		- Lösung: relative Größenangaben in %
+		- % bezieht sich immer auf die Größe des Elternelements,
+			so skalieren Elemente mit Größenangaben in % mit
+		- Beispiel:
+		-->
+
+		<div id="prozent">Prozent!</div>
+
+		<br><br><br>
+
+		<!--
+		#prozent {
+			width: 20%;
+			height: 20%;
+			background-color: #FF0;
+		}
+
+		- kein Effekt, da sich % auf Größe des Elternelements bezieht (hier: body und html)
+		- Lösung:
+
+		html, body {
+		  width: 100%;
+		  height: 100%;
+		}
+
+		-->
+
     <!--
-      - Längenangaben (Höhe, Breite etc.) in % (mitskalieren) oder px (absolut)
-      - Prozent bezieht sich immer auf die Größe des Elternelements. So skalieren Elemente mit
-      Größenangaben in % mit.
-      - Längenangaben für padding, margin und border fast immer in px!
+		- zwei weitere realtive Maßeinheiten (em und rem)
+		- em und rem sind relativ zu Schriftgrößen
+		- 1em ist die Seitenlänge des sog. Gevierts
+		- alte typografische Einheit aus Zeiten des Bleisatzes
+		(werden wir hier der Einfachheit halber nicht verwenden)
+		- Einfacher: 1em sind ca. die Außenmaße eines großen "M"
+		- wenn wir z.B. festgelegt haben, dass unsere Schrift
+		16px groß ist, dann wäre 1em etwa 16px
+		- BEISPIEL:
+		-->
+
+		<span class="em">Text!</span>
+
+		<br><br><br>
+
+		<!--
+		- WICHTIG: em bezieht sich immer auf Schriftgröße des Elternelements
+		- PROBLEM: Vererbung
+		-->
+
+		<span class="em">em<span class="em">em<span class="em">em<span class="em">em</span></span></span></span>
+
+		<br><br><br>
+
+		<!--
+		- Lösung: rem
+		- rem (Root-em bzw. Wurzel-em) bezieht sich immer auf Schriftgröße des
+		Wurzelelements des gesamten HTML-Dokuments (sprich: HTML-Element)
+		- BEISPIEL: Problem vom em mit rem
     -->
 
-    <div>Dies ist ein DIV!</div>
+		<span class="rem">rem<span class="rem">rem<span class="rem">rem<span class="rem">rem</span></span></span></span>
 
-    <!--
-      - Schriftgrößen werden meist mit em, rem oder px angegeben
-      - em ist eine vom Browser berechnete Schriftgröße
-      - em hat als Maßeinheit die Breite und Höhe eines großen "M"
-      - wichtig: "M" welches als Maßeinheit dient ist das "M" in der Schriftgröße
-      des Elternelements, ist diese schon größer vergrößert em im Verhältnis dazu!
-    -->
+		<br><br><br>
 
-    Text!<br><br>
-    <span>Text!</span><br><br>
-    <span>Text!<span>Text!<span>Text!<span>Text!</span></span></span></span>
+		<!--
+		- Welche Größeneinheit? Wann?
 
-    <!--
-      - rem (root-em -> em des Wurzelelements) bezieht sich auf die Größe eines "M" in der
-      Schriftgröße des Wurzelelements (<html>)
-      - dadurch werden Texte nicht zunehmend größer bei Verschachtelungen
-    -->
+		- Schriftgröße: em oder rem (manchmal Standardschriftgröße für HTML-Element in px)
+		- Größenangaben für Elemente: px, %, em, rem
+		- padding, margin, border-radius: em, rem oder %
+		- border: px
+		- vertikaler Abstand zwischen Textabsätzen (<br>) in em
 
-    <br><br><br><br>
-
-    Text!<br><br>
-    <i>Text!</i><br><br>
-    <i>Text!<i>Text!<i>Text!<i>Text!</i></i></i></i>
-
-    <!--
-      - px ist eine absolute Größenangabe (gibt also kein Verhältnis an)
-    -->
-
-    <br><br><br><br>
-
-    Text!<br><br>
-    <u>Text!</u><br><br>
-    <u>Text!<u>Text!<u>Text!<u>Text!</u></u></u></u>
-
-    <!--
-      - es gibt noch viele weitere Maßeinheiten in CSS (Suche: Maßeinheiten CSS)
-    -->
+		-> Hier wird generell viel diskutiert! Einiges davon
+		ist eigener Geschmack oder eigene Konvention! Gerne mitdiskutieren!
+		-->
 
 	</body>
 
