@@ -1,15 +1,4 @@
-#img4 {
-  height: 300px;
+img {
+  height: 200px;
   width: auto;
-}
-
-div {
-  height: 300px;
-  width: 300px;
-  background-color: grey;
-  margin-bottom: 20px;
-}
-
-#einBookmark {
-  background-color: red;
 }
