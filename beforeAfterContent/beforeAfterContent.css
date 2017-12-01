@@ -1,0 +1,19 @@
+#test {
+  height: 200px;
+  width: 200px;
+  background: grey;
+}
+
+#test::before {
+  content: "Ich bin vor dem eigentlichen Content! ";
+}
+
+#test::after {
+  content: " Ich komme nach dem eigentlichen Content!";
+}
+
+/*
+Die Pseudoelemente ::before und ::after erzeugen ein beliebig formatierbares Element,
+das innerhalb des angesprochenen Elements vor bzw. nach dem tatsächlich vorhandenen
+Inhalt eingefügt wird.
+*/

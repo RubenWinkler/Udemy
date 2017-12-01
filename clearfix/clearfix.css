@@ -1,0 +1,42 @@
+/*
+Warum Clearfix?
+
+Grund 1: =======================================
+-> <img>-Element ist im DIV, floatet aber nach rechts und wird deshalb aus dem Textfluss entnommen.
+-> <div> wird so groß, dass es nur noch Text einfasst
+-> Text unter <div> rückt nach oben und floatet ebenfalls um das Bild herum
+-> Was ist, wenn wir nicht wollen, dass Text außerhalb des <div> auch um das Bild floatet?
+
+Grund 2: =======================================
+Der .container kollabiert normal, da das Float aus dem Textfluss entnommen wird
+
+==========================================
+Wie funktioniert clearfix?
+-> fügt Pseudoelement :after hinzu
+-> dieses ist ganz unten im .container
+-> es hat durch content: ""; keinen Inhalt und deshalb auch keine Höhe (height: 0px)
+-> es wird durch display: block; als Blockelement dargestellt um sichzugehen,
+  dass es die ganze Zeile einnehmen (width: 100%)
+-> es will durch clear: both; keine Floats rechts oder links von sich
+-> da after-Pseudoelement aber im .container unterhalb des <img>-Elements ist und
+   der .container alle Elemente einfassen muss, muss er bis unter das <img>-Element gehen
+==> .container ist groß genug für das floatende <img>!!!
+==> Inhalte außerhalb des .containers können nicht mehr reinfloaten,
+    da sie jetzt vom Container geblockt werden!!!
+*/
+
+div {
+  background-color: grey;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}

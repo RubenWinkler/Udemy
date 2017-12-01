@@ -1,0 +1,41 @@
+.test {
+  width: 600px;
+  height: 600px;
+  background-color: grey;
+}
+
+/* 3. gilt bis zu einer maximalen größe von 400px, dann anders */
+
+@media (max-width: 400px) {
+
+  .test {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+  }
+
+}
+
+/* 2. gilt bis zu einer minimalen größe von 800px, dann anders */
+
+@media (min-width: 800px) {
+
+  .test {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+  }
+
+}
+
+/* 1. bei einer größe von 1000px */
+
+@media (width: 1000px) {
+
+  .test {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+  }
+
+}
