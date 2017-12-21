@@ -125,7 +125,7 @@ p {
   margin-left: auto;
 }
 
-.row:after {
+.row::after {
   content:"";
   display: table;
   clear:both;
@@ -140,11 +140,9 @@ p {
 .col-1{ width: 16.666%; }
 .col-2{ width: 33.333%; }
 .col-3{ width: 50%;     }
-.col-4{ width: 66.666%; }
-.col-5{ width: 83.333%; }
 .col-6{ width: 100%;    }
 
-@media all and (max-width: 922px) {
+@media (max-width: 922px) {
 
   .col-1{ width: 33.333%; }
   .col-2{ width: 33.333%; }
@@ -153,7 +151,7 @@ p {
 
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .col-1{ width: 50%;   }
   .col-2{ width: 100%;  }
@@ -162,7 +160,7 @@ p {
 
 }
 
-@media all and (max-width: 576px) {
+@media (max-width: 576px) {
 
    .col-1{ width: 100%; }
    .col-2{ width: 100%; }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+
+    <form action="formValidierung.html" method="get" novalidate>
+
+      <input type="text" name="meinName" pattern=".*Ruben.*">
+
+      <input type="email" name="email" pattern="[a-zA-Z0-9]*\.?\_?\-?[a-zA-Z0-9]+@[a-zA-Z0-9]+\.?\-?[a-zA-Z0-9]*\.[a-zA-Z]{2,4}">
+
+      <button type="submit">Absenden!</button>
+
+    </form>
+
+	</body>
+
+</html>

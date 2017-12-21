@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+
+    <form action="sonstigeInputs.html" method="get">
+
+      <input type="hidden" name="versteckt" value="Ich bin versteckt übergeben worden!">
+
+      <button type="submit">Absenden!</button>
+
+    </form>
+
+    <br><br>
+
+    <!--
+    Dieses Element funktioniert nur mit der POST-Methode und nicht mit GET. Außerdem muss im
+    Formular das enctype="multipart/form-data"-Attribut notiert werden, da sonst nur der Namen
+    und nicht die Datei selbst übertragen wird.
+    -->
+
+    <form action="sonstigeInputs.html" method="post" enctype="multipart/form-data" multiple>
+
+      <input type="file" name="datei">
+
+      <button type="submit">Absenden!</button>
+
+    </form>
+
+	</body>
+
+</html>
